@@ -64,13 +64,135 @@
     keymap {
         compatible = "zmk,keymap";
 
+        default {
+            bindings = <
+&trans  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U         &kp Y            &kp SQT          &trans
+&trans  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S   &mt LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E   &mt RIGHT_ALT I  &mt RIGHT_GUI O  &trans
+&trans  &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
+                                        &lt 1 ESCAPE  &lt 2 SPACE       &lt 3 TAB                                                                &lt 4 ENTER  &lt 5 BACKSPACE    &lt 6 DELETE
+            >;
+
+            label = "arst";
+        };
+
+        media {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans      &trans            &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans      &trans            &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans      &trans            &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &kp C_STOP  &kp K_PLAY_PAUSE  &trans
+            >;
+
+            label = "media";
+        };
+
+        nav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
+                        &trans  &trans  &trans                                    &trans      &trans       &trans
+            >;
+
+            label = "nav";
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans     &trans          &trans          &trans        &trans           &trans
+                        &trans  &trans  &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
+            >;
+
+            label = "mouse";
+        };
+
+        sym {
+            bindings = <
+&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE                                     &trans  &trans  &trans
+            >;
+
+            label = "sym";
+        };
+
+        num {
+            bindings = <
+&trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                        &kp PERIOD    &kp NUMBER_0  &kp MINUS                                               &trans  &trans  &trans
+            >;
+
+            label = "num";
+        };
+
+        fun {
+            bindings = <
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "fun";
+        };
+
+        layer_11 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        layer_12 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        layer_13 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        layer_14 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        layer_15 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R   &kp T                                &kp UP                &kp Y         &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A  &kp S  &kp D     &kp F   &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H         &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V   &kp B         &kp SPACE              &kp DOWN              &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &mo 13  &lt 15 SPACE                                               &lt 15 ENTER  &mo 14  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
