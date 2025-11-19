@@ -36,6 +36,16 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -67,7 +77,7 @@
         default {
             bindings = <
 &trans  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U         &kp Y            &kp SQT          &trans
-&trans  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S   &mt LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E   &mt RIGHT_ALT I  &mt RIGHT_GUI O  &trans
+&trans  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
 &trans  &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
                                         &lt 1 ESCAPE  &lt 2 SPACE       &lt 3 TAB                                                                &lt 4 ENTER  &lt 5 BACKSPACE    &lt 6 DELETE
             >;
