@@ -1,6 +1,19 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
+// 图层索引常量，方便在行为和输入处理器里引用
+#define L_BASE          0
+#define L_MEDIA         1
+#define L_NAV           2
+#define L_MOUSE         3
+#define L_SYM           4
+#define L_NUM           5
+#define L_FUN           6
+#define L_MOUSE_SLOW    7   // layer_11
+#define L_MOUSE_NORMAL  8   // layer_12
+#define L_MOUSE_FAST    9   // layer_13
+#define L_MOUSE_TURBO   10  // layer_14
+
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
@@ -9,7 +22,35 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+// 鼠标移动速度缩放：基础速度 + 按图层覆盖，不同图层对应不同速度档位
+&mmv_input_listener {
+    // 默认“普通”速度
+    input-processors = <&zip_xy_scaler 2 1>;
+
+    slow {
+        layers = <L_MOUSE_SLOW>;
+        // 慢速：缩小移动量
+        input-processors = <&zip_xy_scaler 1 4>;
+    };
+
+    normal {
+        layers = <L_MOUSE_NORMAL>;
+        // 普通：维持默认缩放
+        input-processors = <&zip_xy_scaler 2 1>;
+    };
+
+    fast {
+        layers = <L_MOUSE_FAST>;
+        // 快：放大移动量
+        input-processors = <&zip_xy_scaler 4 1>;
+    };
+
+    turbo {
+        layers = <L_MOUSE_TURBO>;
+        // 飞快：大幅放大移动量
+        input-processors = <&zip_xy_scaler 8 1>;
+    };
+};
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
@@ -109,10 +150,10 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans     &trans          &trans          &trans        &trans           &trans
-                        &trans  &trans  &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
+&trans  &trans          &trans           &trans           &trans           &trans                    &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
+&trans  &mo L_MOUSE_SLOW  &mo L_MOUSE_NORMAL  &mo L_MOUSE_FAST  &mo L_MOUSE_TURBO  &trans      &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans          &trans           &trans           &trans           &trans  &trans            &trans          &trans     &trans          &trans          &trans        &trans           &trans
+                        &trans          &trans           &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
             >;
 
             label = "mouse";
