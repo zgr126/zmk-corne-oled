@@ -178,9 +178,9 @@
 
         sym {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                    &trans          &trans  &trans  &trans  &trans  &kp COLON      &trans
+&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SEMICOLON  &trans
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans            &trans          &trans  &trans  &trans  &trans  &trans         &trans
                                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE                                     &trans  &trans  &trans
             >;
 
@@ -189,10 +189,10 @@
 
         num {
             bindings = <
-&trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TILDE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                        &kp PERIOD    &kp NUMBER_0  &kp MINUS                                               &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                       &trans          &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &trans
+&trans  &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                       &trans  &trans  &trans  &kp PLUS          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0       &trans
+&trans  &kp TILDE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH  &trans            &trans          &kp MINUS         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK       &trans
+                                        &kp PERIOD    &kp NUMBER_0  &kp MINUS                                               &trans            &trans        &trans
             >;
 
             label = "num";
@@ -211,10 +211,10 @@
 
         game {
             bindings = <
-&trans  &kp NUMBER_1    &kp Q  &kp W   &kp E      &kp R                        &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &trans
+&trans  &kp NUMBER_1    &kp Q  &kp W   &kp E      &kp R                        &trans          &sl 0      &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &trans
 &trans  &kp LEFT_SHIFT  &kp A  &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER   &trans
 &trans  &kp LCTRL       &kp Z  &kp X   &kp C      &kp V      &trans            &trans          &trans     &trans          &trans          &trans           &trans      &trans
-                               &trans  &kp SPACE  &kp SPACE                                    &kp SPACE  &kp SPACE       &lt 0 SPACE
+                               &trans  &kp SPACE  &kp SPACE                                    &kp SPACE  &kp SPACE       &kp SPACE
             >;
 
             label = "game";
