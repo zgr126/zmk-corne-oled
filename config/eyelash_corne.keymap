@@ -2,6 +2,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
 // 图层索引常量，方便在行为和输入处理器里引用
+
 #define L_BASE          0
 #define L_MEDIA         1
 #define L_NAV           2
@@ -23,31 +24,41 @@
 #include <dt-bindings/zmk/rgb.h>
 
 // 鼠标移动速度缩放：基础速度 + 按图层覆盖，不同图层对应不同速度档位
+
 &mmv_input_listener {
     // 默认“普通”速度
+
     input-processors = <&zip_xy_scaler 2 1>;
 
     slow {
         layers = <L_MOUSE_SLOW>;
+
         // 慢速：缩小移动量
+
         input-processors = <&zip_xy_scaler 1 4>;
     };
 
     normal {
         layers = <L_MOUSE_NORMAL>;
+
         // 普通：维持默认缩放
+
         input-processors = <&zip_xy_scaler 2 1>;
     };
 
     fast {
         layers = <L_MOUSE_FAST>;
+
         // 快：放大移动量
+
         input-processors = <&zip_xy_scaler 4 1>;
     };
 
     turbo {
         layers = <L_MOUSE_TURBO>;
+
         // 飞快：大幅放大移动量
+
         input-processors = <&zip_xy_scaler 8 1>;
     };
 };
@@ -109,6 +120,11 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+        togame {
+            bindings = <&sl 7>;
+            key-positions = <43 33 0 46 36 12>;
+        };
     };
 
     keymap {
@@ -139,21 +155,22 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp CAPS    &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp INSERT  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
-                        &trans  &trans  &trans                                    &trans      &trans       &trans
+&trans  &kp LC(Q)  &kp LC(W)  &kp LC(F)  &kp LC(P)  &kp LC(Y)                            &msc SCRL_UP                     &kp K_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp K_UNDO  &trans
+&trans  &kp LC(A)  &kp LC(R)  &kp LC(S)  &kp LC(T)  &kp LC(G)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp CAPS    &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT   &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans
+                              &trans     &trans     &trans                                                                &trans      &kp BACKSPACE   &kp DEL
             >;
 
             label = "nav";
+            sensor-bindings = <&inc_dec_kp PLUS MINUS>;
         };
 
         mouse {
             bindings = <
-&trans  &trans          &trans           &trans           &trans           &trans                    &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
-&trans  &mo L_MOUSE_SLOW  &mo L_MOUSE_NORMAL  &mo L_MOUSE_FAST  &mo L_MOUSE_TURBO  &trans      &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans          &trans           &trans           &trans           &trans  &trans            &trans          &trans     &trans          &trans          &trans        &trans           &trans
-                        &trans          &trans           &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
+&trans  &trans          &trans          &trans        &trans           &trans                    &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans            &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans          &trans          &mkp RCLK     &mkp LCLK        &trans  &trans            &trans          &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                                        &trans        &trans           &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
             >;
 
             label = "mouse";
@@ -161,10 +178,10 @@
 
         sym {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE                                     &trans  &trans  &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                    &trans          &kp EXCLAMATION  &trans  &trans  &trans  &kp COLON      &trans
+&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                   &trans  &trans  &trans  &kp QUESTION     &trans  &trans  &trans  &kp SEMICOLON  &trans
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans            &trans          &trans           &trans  &trans  &trans  &trans         &trans
+                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE                                     &trans           &trans  &trans
             >;
 
             label = "sym";
@@ -172,10 +189,10 @@
 
         num {
             bindings = <
-&trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TILDE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                        &kp PERIOD    &kp NUMBER_0  &kp MINUS                                               &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                       &trans          &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &trans
+&trans  &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                       &trans  &trans  &trans  &kp PLUS          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0       &trans
+&trans  &kp TILDE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH  &trans            &trans          &kp MINUS         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK       &trans
+                                        &kp PERIOD    &kp NUMBER_0  &kp MINUS                                               &trans            &trans        &trans
             >;
 
             label = "num";
@@ -192,13 +209,15 @@
             label = "fun";
         };
 
-        layer_11 {
+        game {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &kp NUMBER_1    &kp Q  &kp W   &kp E      &kp R                        &trans          &sl 0      &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &trans
+&trans  &kp LEFT_SHIFT  &kp A  &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER   &trans
+&trans  &kp LCTRL       &kp Z  &kp X   &kp C      &kp V      &trans            &trans          &trans     &trans          &trans          &trans           &trans      &trans
+                               &trans  &kp SPACE  &kp SPACE                                    &kp SPACE  &kp SPACE       &kp SPACE
             >;
+
+            label = "game";
         };
 
         layer_12 {
