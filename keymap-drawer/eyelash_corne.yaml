@@ -4,41 +4,41 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
   - W
-  - E
-  - R
-  - T
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - Y
-  - U
-  - I
+  - F
   - P
+  - B
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - J
+  - L
+  - U
+  - Y
   - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: A, s: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, s: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, s: '$$mdi:apple-keyboard-shift$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - H
-  - {t: J, s: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, s: '$$mdi:apple-keyboard-option$$'}
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: RIGHT GUI}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Z
   - X
   - C
+  - D
   - V
-  - B
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - N
-  - M
+  - K
+  - H
   - {t: ',', s: <}
   - .
   - {t: /, s: '?'}
@@ -102,8 +102,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Q
   - Ctl+W
-  - Ctl+E
-  - Ctl+R
+  - Ctl+F
+  - Ctl+P
   - Ctl+Y
   - $$mdi:pan-up$$
   - REDO
@@ -114,9 +114,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+A
+  - Ctl+R
   - Ctl+S
-  - Ctl+D
-  - Ctl+F
+  - Ctl+T
   - Ctl+G
   - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -131,8 +131,8 @@ layers:
   - Ctl+Z
   - Ctl+X
   - Ctl+C
+  - Ctl+D
   - Ctl+V
-  - Ctl+B
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
   - Ins
