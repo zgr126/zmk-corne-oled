@@ -132,9 +132,9 @@
 
         default {
             bindings = <
-&trans  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U         &kp Y            &kp SQT          &trans
-&trans  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
-&trans  &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
+&trans  &kp Q           &kp W           &kp E         &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y        &kp U              &kp I         &kp P            &kp SQT          &trans
+&trans  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm RIGHT_GUI O  &trans
+&trans  &kp Z           &kp X           &kp C         &kp V             &kp B      &mkp RCLK                    &mmv MOVE_DOWN                   &kp N        &kp M              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
                                         &lt 1 ESCAPE  &lt 2 SPACE       &lt 3 TAB                                                                &lt 4 ENTER  &lt 5 BACKSPACE    &lt 6 DELETE
             >;
 
@@ -155,10 +155,10 @@
 
         nav {
             bindings = <
-&trans  &kp LC(Q)  &kp LC(W)  &kp LC(F)  &kp LC(P)  &kp LC(Y)                            &msc SCRL_UP                     &kp K_REDO  &kp K_PASTE    &kp K_COPY     &kp K_CUT    &kp K_UNDO  &trans
-&trans  &kp LC(A)  &kp LC(R)  &kp LC(S)  &kp LC(T)  &kp LC(G)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp CAPS    &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT   &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &trans
-                              &trans     &trans     &trans                                                                &trans      &kp BACKSPACE  &kp DEL
+&trans  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(Y)                            &msc SCRL_UP                     &kp K_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp K_UNDO  &trans
+&trans  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp CAPS    &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT   &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans
+                              &trans     &trans     &trans                                                                &trans      &kp BACKSPACE   &kp DEL
             >;
 
             label = "nav";
@@ -167,10 +167,10 @@
 
         mouse {
             bindings = <
-&trans  &trans            &trans              &trans            &trans             &trans                    &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
-&trans  &mo L_MOUSE_SLOW  &mo L_MOUSE_NORMAL  &mo L_MOUSE_FAST  &mo L_MOUSE_TURBO  &trans            &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans            &trans              &trans            &trans             &trans  &trans            &trans          &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                                              &trans            &trans             &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
+&trans  &trans          &trans          &trans        &trans           &trans                    &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans            &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans          &trans          &mkp RCLK     &mkp LCLK        &trans  &trans            &trans          &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                                        &trans        &trans           &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
             >;
 
             label = "mouse";
@@ -178,10 +178,10 @@
 
         sym {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                    &trans          &trans  &trans  &trans  &trans  &kp COLON      &trans
-&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SEMICOLON  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans            &trans          &trans  &trans  &trans  &trans  &trans         &trans
-                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE                                     &trans  &trans  &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                    &trans          &kp EXCLAMATION  &trans  &trans  &trans  &kp COLON      &trans
+&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                   &trans  &trans  &trans  &kp QUESTION     &trans  &trans  &trans  &kp SEMICOLON  &trans
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans            &trans          &trans           &trans  &trans  &trans  &trans         &trans
+                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE                                     &trans           &trans  &trans
             >;
 
             label = "sym";
