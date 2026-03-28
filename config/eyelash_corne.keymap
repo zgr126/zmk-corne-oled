@@ -15,6 +15,19 @@
 #define L_MOUSE_FAST    9   // layer_13
 #define L_MOUSE_TURBO   10  // layer_14
 
+#define LAYER_ARST      0
+#define LAYER_QWER      1
+#define LAYER_MEDIA     2
+#define LAYER_NAV       3
+#define LAYER_MOUSE     4
+#define LAYER_SYM       5
+#define LAYER_NUM       6
+#define LAYER_FUN       7
+#define LAYER_GAME      8
+#define LAYER_13        9
+#define LAYER_14        10
+#define LAYER_15        11
+
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
@@ -119,21 +132,25 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
+            layers = <LAYER_ARST LAYER_QWER LAYER_MEDIA LAYER_NAV LAYER_MOUSE LAYER_SYM LAYER_NUM LAYER_FUN LAYER_13 LAYER_14 LAYER_15>;
         };
 
         togame {
-            bindings = <&to 8>;
+            bindings = <&to LAYER_GAME>;
             key-positions = <20 3>;
+            layers = <LAYER_ARST LAYER_QWER LAYER_MEDIA LAYER_NAV LAYER_MOUSE LAYER_SYM LAYER_NUM LAYER_FUN LAYER_13 LAYER_14 LAYER_15>;
         };
 
         toqwer {
-            bindings = <&to 1>;
+            bindings = <&to LAYER_QWER>;
             key-positions = <20 2>;
+            layers = <LAYER_ARST LAYER_QWER LAYER_MEDIA LAYER_NAV LAYER_MOUSE LAYER_SYM LAYER_NUM LAYER_FUN LAYER_13 LAYER_14 LAYER_15>;
         };
 
         toarst {
-            bindings = <&to 0>;
+            bindings = <&to LAYER_ARST>;
             key-positions = <20 1>;
+            layers = <LAYER_ARST LAYER_QWER LAYER_MEDIA LAYER_NAV LAYER_MOUSE LAYER_SYM LAYER_NUM LAYER_FUN LAYER_13 LAYER_14 LAYER_15>;
         };
     };
 
@@ -233,9 +250,9 @@
 
         game {
             bindings = <
-&trans  &kp NUMBER_3    &kp Q  &kp W   &kp E      &kp R                        &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &trans
+&trans  &kp NUMBER_3    &kp Q  &kp W   &kp E      &kp R                        &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &to LAYER_QWER
 &trans  &kp LEFT_SHIFT  &kp A  &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER   &trans
-&trans  &kp LCTRL       &kp Z  &kp X   &kp C      &kp V      &trans            &trans          &trans     &trans          &trans          &trans           &trans      &trans
+&trans  &kp LCTRL       &kp Z  &kp X   &kp C      &kp V      &trans            &trans          &trans     &trans          &trans          &trans           &trans      &to LAYER_QWER
                                &trans  &kp SPACE  &kp SPACE                                    &kp SPACE  &kp SPACE       &kp SPACE
             >;
 
