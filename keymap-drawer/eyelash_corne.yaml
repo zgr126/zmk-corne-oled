@@ -405,7 +405,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
-  - {t: qwer, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - A
@@ -434,7 +434,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: qwer, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
@@ -594,10 +594,10 @@ combos:
   l: [arst, qwer, media, nav, mouse, sym, num, fun, '13', '14', '15']
 - p: [20, 3]
   k: {t: game, h: toggle}
-  l: [arst, qwer, media, nav, mouse, sym, num, fun, '13', '14', '15']
+  l: [arst, qwer, media, nav, mouse, sym, num, fun, game, '13', '14', '15']
 - p: [20, 2]
   k: {t: qwer, h: toggle}
-  l: [arst, qwer, media, nav, mouse, sym, num, fun, '13', '14', '15']
+  l: [arst, qwer, media, nav, mouse, sym, num, fun, game, '13', '14', '15']
 - p: [20, 1]
   k: {t: arst, h: toggle}
-  l: [arst, qwer, media, nav, mouse, sym, num, fun, '13', '14', '15']
+  l: [arst, qwer, media, nav, mouse, sym, num, fun, game, '13', '14', '15']
