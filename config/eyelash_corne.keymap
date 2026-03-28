@@ -125,19 +125,19 @@
         togame {
             bindings = <&to 8>;
             key-positions = <20 3>;
-            layers = <0 1 2 3 4 5 6 7 9 10 11>;
+            layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
         };
 
         toqwer {
             bindings = <&to 1>;
             key-positions = <20 2>;
-            layers = <0 1 2 3 4 5 6 7 9 10 11>;
+            layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
         };
 
         toarst {
             bindings = <&to 0>;
             key-positions = <20 1>;
-            layers = <0 1 2 3 4 5 6 7 9 10 11>;
+            layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
         };
     };
 
@@ -237,9 +237,9 @@
 
         game {
             bindings = <
-&trans  &kp NUMBER_3    &kp Q  &kp W   &kp E      &kp R                        &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &to 1
+&trans  &kp NUMBER_3    &kp Q  &kp W   &kp E      &kp R                        &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &trans
 &trans  &kp LEFT_SHIFT  &kp A  &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER   &trans
-&trans  &kp LCTRL       &kp Z  &kp X   &kp C      &kp V      &trans            &trans          &trans     &trans          &trans          &trans           &trans      &to 1
+&trans  &kp LCTRL       &kp Z  &kp X   &kp C      &kp V      &trans            &trans          &trans     &trans          &trans          &trans           &trans      &trans
                                &trans  &kp SPACE  &kp SPACE                                    &kp SPACE  &kp SPACE       &kp SPACE
             >;
 
