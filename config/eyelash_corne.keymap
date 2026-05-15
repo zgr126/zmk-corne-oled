@@ -119,25 +119,25 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
-            layers = <0 1 2 3 4 5 6 7 9 10 11>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         togame {
             bindings = <&to 8>;
             key-positions = <20 3>;
-            layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
+            layers = <0 1 2 3 4 5 6 7 8>;
         };
 
         toqwer {
             bindings = <&to 1>;
             key-positions = <20 2>;
-            layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
+            layers = <0 1 2 3 4 5 6 7 8>;
         };
 
         toarst {
             bindings = <&to 0>;
             key-positions = <20 1>;
-            layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
+            layers = <0 1 2 3 4 5 6 7 8>;
         };
     };
 
@@ -237,40 +237,13 @@
 
         game {
             bindings = <
-&trans  &kp NUMBER_3    &kp Q  &kp W   &kp E      &kp R                        &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &trans
-&trans  &kp LEFT_SHIFT  &kp A  &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER   &trans
-&trans  &kp LCTRL       &kp Z  &kp X   &kp C      &kp V      &trans            &trans          &trans     &trans          &trans          &trans           &trans      &trans
-                               &trans  &kp SPACE  &kp SPACE                                    &kp SPACE  &kp SPACE       &kp SPACE
+&kp TAB         &kp Q  &kp W  &kp E      &kp R         &kp T                         &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &trans
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F         &kp G                 &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER   &trans
+&kp LCTRL       &kp Z  &kp X  &kp C      &kp NUMBER_3  &kp H       &kp F1            &trans          &trans     &trans          &trans          &trans           &trans      &trans
+                              &kp SPACE  &kp SPACE     &kp ESCAPE                                    &kp SPACE  &kp SPACE       &kp SPACE
             >;
 
             label = "game";
-        };
-
-        layer_13 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
-        };
-
-        layer_14 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
-        };
-
-        layer_15 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
         };
     };
 };
