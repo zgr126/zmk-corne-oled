@@ -139,6 +139,31 @@
             key-positions = <20 1>;
             layers = <0 1 2 3 4 5 6 7 8>;
         };
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <1 14>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <2 15>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <3 16>;
+        };
+
+        f4 {
+            bindings = <&kp F4>;
+            key-positions = <4 17>;
+        };
+
+        f5 {
+            bindings = <&kp F4>;
+            key-positions = <4 17>;
+        };
     };
 
     keymap {
@@ -146,10 +171,10 @@
 
         arst {
             bindings = <
-&trans  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U         &kp Y            &kp SQT          &trans
-&trans  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
-&trans  &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
-                                        &lt 2 ESCAPE  &lt 3 SPACE       &lt 4 TAB                                                                &lt 5 ENTER  &lt 6 BACKSPACE    &lt 7 DELETE
+&kp ESCAPE  &kp Q           &kp W           &kp F           &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U         &kp Y            &kp SQT          &trans
+&kp LSHFT   &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S     &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
+&kp LCTRL   &kp Z           &kp X           &kp C           &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
+                                            &lt 2 LEFT_ALT  &lt 3 SPACE       &lt 4 TAB                                                                &lt 5 ENTER  &lt 6 BACKSPACE    &lt 7 DELETE
             >;
 
             label = "arst";
@@ -240,7 +265,7 @@
 &kp TAB         &kp Q  &kp W  &kp E      &kp R         &kp T                         &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &trans
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F         &kp G                 &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER   &trans
 &kp LCTRL       &kp Z  &kp X  &kp C      &kp NUMBER_3  &kp H       &kp F1            &trans          &trans     &trans          &trans          &trans           &trans      &trans
-                              &kp SPACE  &kp SPACE     &kp ESCAPE                                    &kp SPACE  &kp SPACE       &kp SPACE
+                              &kp SPACE  &kp SPACE     &kp ESCAPE                                    &kp ENTER  &kp SPACE       &kp SPACE
             >;
 
             label = "game";
