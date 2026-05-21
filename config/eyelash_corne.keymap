@@ -119,115 +119,133 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
-            layers = <0 7 2 3 4 5 1>;
+            layers = <0 7 4 2 3 5 1>;
         };
 
         togame {
             bindings = <&to 0>;
             key-positions = <20 3>;
-            layers = <0 7 2 3 4 5 1>;
+            layers = <0 7 4 2 3 5 1>;
         };
 
         toqwer {
             bindings = <&to 7>;
             key-positions = <20 2>;
-            layers = <0 7 2 3 4 5 1>;
+            layers = <0 7 4 2 3 5 1>;
         };
 
         toarst {
             bindings = <&to 0>;
             key-positions = <20 1>;
-            layers = <0 7 2 3 4 5 1>;
+            layers = <0 4 2 3 5 1 7>;
         };
 
         f1 {
             bindings = <&kp F1>;
             key-positions = <1 14>;
+            layers = <0 2 1 3 4 5 6>;
         };
 
         f2 {
             bindings = <&kp F2>;
             key-positions = <2 15>;
+            layers = <0 1 3 2 4 5 6>;
         };
 
         f3 {
             bindings = <&kp F3>;
             key-positions = <3 16>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         f4 {
             bindings = <&kp F4>;
             key-positions = <4 17>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         f5 {
             bindings = <&kp F5>;
             key-positions = <5 18>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         f6 {
             bindings = <&kp F6>;
             key-positions = <7 22>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         f7 {
             bindings = <&kp F7>;
             key-positions = <8 23>;
+            layers = <1 0 2 3 4 5 6>;
         };
 
         f8 {
             bindings = <&kp F8>;
             key-positions = <9 24>;
+            layers = <1 0 2 3 4 5 6>;
         };
 
         f9 {
             bindings = <&kp F9>;
             key-positions = <25 10>;
+            layers = <1 0 2 3 4 5 6>;
         };
 
         f10 {
             bindings = <&kp F10>;
             key-positions = <11 26>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         f11 {
             bindings = <&kp F11>;
             key-positions = <10 39>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         f12 {
             bindings = <&kp F12>;
             key-positions = <11 40>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         lkuohao {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <2 3>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         rkuohao {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <3 4>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         l-m {
             bindings = <&kp LBKT>;
             key-positions = <15 16>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         r-m {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <16 17>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         l-b {
             bindings = <&kp LBRC>;
             key-positions = <30 31>;
+            layers = <0 1 2 3 5 4 6>;
         };
 
         r-b {
             bindings = <&kp RBRC>;
             key-positions = <31 32>;
+            layers = <0 1 2 3 4 5 6>;
         };
     };
 
@@ -236,10 +254,10 @@
 
         arst {
             bindings = <
-&kp ESCAPE  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U         &kp Y            &kp SQT          &trans
-&kp LSHFT   &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
-&kp LCTRL   &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
-                                            &lt 2 ESCAPE  &lt 1 SPACE       &lt 4 TAB                                                                &lt 5 ENTER  &lt 1 BACKSPACE    &lt 3 DELETE
+&kp GRAVE  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U         &kp Y            &kp SQT          &trans
+&kp LSHFT  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
+&kp LCTRL  &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
+                                           &lt 1 ESCAPE  &lt 2 SPACE       &lt 3 TAB                                                                &lt 5 ENTER  &lt 2 BACKSPACE    &lt 1 DELETE
             >;
 
             label = "arst";
@@ -248,24 +266,13 @@
 
         num {
             bindings = <
-&trans  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                                  &trans          &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans
-&trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                       &trans  &trans  &trans  &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
-&trans  &kp TILDE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH  &trans            &trans          &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &trans
-                                    &trans        &trans        &trans                                                  &trans        &trans        &trans
+&trans  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                      &trans          &kp EQUAL    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans
+&trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERCENT            &trans  &trans  &trans  &kp PERCENT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
+&trans  &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp X        &trans            &trans          &kp X        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
+                                    &trans        &trans        &trans                                         &trans       &trans        &trans
             >;
 
             label = "num";
-        };
-
-        broswer {
-            bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans          &trans      &kp LA(LEFT)      &kp LC(W)  &kp LC(LS(T))  &kp LA(RIGHT)  &trans
-&trans  &trans        &trans        &trans        &trans        &bt BT_CLR              &trans  &trans  &trans  &trans      &kp LC(LS(TAB))   &kp LC(W)  &kp LC(T)      &kp LC(TAB)    &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans            &trans          &trans      &kp LC(H)         &kp LC(E)  &kp LC(F5)     &kp LC(D)      &trans
-                                    &trans        &trans        &trans                                          &kp C_STOP  &kp K_PLAY_PAUSE  &trans
-            >;
-
-            label = "quick";
         };
 
         nav {
@@ -273,7 +280,7 @@
 &trans  &kp LC(Q)  &kp LC(W)  &kp LC(F)  &kp LC(P)  &kp LC(Y)                            &msc SCRL_UP                     &kp K_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp K_UNDO  &trans
 &trans  &kp LC(A)  &kp LC(R)  &kp LC(S)  &kp LC(T)  &kp LC(G)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp CAPS    &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT   &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans
-                              &trans     &trans     &trans                                                                &trans      &kp BACKSPACE   &kp DEL
+                              &trans     &trans     &trans                                                                &trans      &trans          &trans
             >;
 
             label = "nav";
@@ -291,12 +298,23 @@
             label = "mouse";
         };
 
+        broswer {
+            bindings = <
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans          &trans  &kp LA(LEFT)     &kp LC(W)  &kp LC(LS(T))  &kp LA(RIGHT)  &trans
+&trans  &trans        &trans        &trans        &trans        &bt BT_CLR              &trans  &trans  &trans  &trans  &kp LC(LS(TAB))  &kp LC(W)  &kp LC(T)      &kp LC(TAB)    &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans            &trans          &trans  &kp LC(H)        &kp LC(E)  &kp LC(F5)     &kp LC(D)      &trans
+                                    &trans        &trans        &trans                                          &trans  &trans           &trans
+            >;
+
+            label = "broswer";
+        };
+
         sym {
             bindings = <
-&trans  &kp TILDE  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans                            &trans          &trans  &trans  &trans  &trans  &kp COLON      &trans
-&trans  &kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SEMICOLON  &trans
-&trans  &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp PIPE        &trans            &trans          &trans  &trans  &trans  &trans  &trans         &trans
-                                    &trans        &trans                &kp UNDERSCORE                                    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp TILDE       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp COLON             &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp MINUS       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp SEMICOLON         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp UNDERSCORE  &kp EXCL       &kp AT_SIGN   &kp HASH              &kp NON_US_BACKSLASH  &trans
+                        &trans  &trans  &trans                                    &trans          &trans         &trans
             >;
 
             label = "sym";
@@ -307,7 +325,7 @@
 &trans  &kp Q           &kp W           &kp E         &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y        &kp U              &kp I         &kp O            &kp P               &trans
 &trans  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm SEMI SEMICOLON  &trans
 &trans  &kp Z           &kp X           &kp C         &kp V             &kp B      &mkp RCLK                    &mmv MOVE_DOWN                   &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH            &trans
-                                        &lt 2 ESCAPE  &lt 1 SPACE       &lt 4 TAB                                                                &lt 5 ENTER  &lt 1 BACKSPACE    &lt 4 DELETE
+                                        &lt 4 ESCAPE  &lt 1 SPACE       &lt 3 TAB                                                                &lt 5 ENTER  &lt 1 BACKSPACE    &lt 3 DELETE
             >;
 
             label = "qwer";
