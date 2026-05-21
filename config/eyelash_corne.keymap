@@ -161,8 +161,53 @@
         };
 
         f5 {
-            bindings = <&kp F4>;
-            key-positions = <4 17>;
+            bindings = <&kp F5>;
+            key-positions = <5 18>;
+        };
+
+        f6 {
+            bindings = <&kp F6>;
+            key-positions = <7 22>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <8 23>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <9 24>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <25 10>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <11 26>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <10 39>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <11 40>;
+        };
+
+        lkuohao {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <2 3>;
+        };
+
+        rkuohao {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <3 4>;
         };
     };
 
