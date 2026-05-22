@@ -107,7 +107,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&kp ENTER>, <&to L_ARST_FROM_GAME>;
+            bindings = <&kp ENTER &to L_ARST_FROM_GAME>;
         };
 
         arst_enter_to_game: arst_enter_to_game {
@@ -115,7 +115,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&kp ENTER>, <&to L_GAME>;
+            bindings = <&kp ENTER &to L_GAME>;
         };
     };
 
@@ -274,9 +274,9 @@
 
         arst {
             bindings = <
-&kp GRAVE  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U         &kp Y            &kp SQT          &trans
-&kp LSHFT  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
-&kp LCTRL  &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
+&kp GRAVE  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J            &kp L              &kp U         &kp Y            &kp SQT          &trans
+&kp LSHFT  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M            &hm RIGHT_SHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
+&kp LCTRL  &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K            &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
                                            &lt 2 ESCAPE  &lt 3 SPACE       &lt 4 TAB                                                                &lt L_SYM ENTER  &lt 3 BACKSPACE    &lt 2 DELETE
             >;
 
@@ -286,9 +286,9 @@
 
         qwer {
             bindings = <
-&kp GRAVE   &kp Q           &kp W           &kp E         &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y        &kp U              &kp I         &kp O            &kp P                  &trans
-&kp LSHIFT  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm LWIN SINGLE_QUOTE  &trans
-&kp LCTRL   &kp Z           &kp X           &kp C         &kp V             &kp B      &mkp RCLK                    &mmv MOVE_DOWN                   &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH               &trans
+&kp GRAVE   &kp Q           &kp W           &kp E         &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y            &kp U              &kp I         &kp O            &kp P                  &trans
+&kp LSHIFT  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H            &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm LWIN SINGLE_QUOTE  &trans
+&kp LCTRL   &kp Z           &kp X           &kp C         &kp V             &kp B      &mkp RCLK                    &mmv MOVE_DOWN                   &kp N            &kp M              &kp COMMA     &kp DOT          &kp FSLH               &trans
                                             &lt 2 ESCAPE  &lt 3 SPACE       &lt 4 TAB                                                                &lt L_SYM ENTER  &lt 3 BACKSPACE    &lt 2 DELETE
             >;
 
@@ -298,7 +298,7 @@
 
         num {
             bindings = <
-&trans  &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                      &trans          &kp EQUAL    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans        &trans
+&trans  &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                      &trans          &kp EQUAL    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &trans
 &trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERCENT            &trans  &trans  &trans  &kp PERCENT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
 &trans  &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp X        &trans            &trans          &kp X        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
                                     &trans        &trans        &trans                                         &trans       &trans        &trans
@@ -354,9 +354,9 @@
 
         game {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E      &kp R         &kp T                         &trans          &trans     &trans          &kp UP_ARROW    &trans           &kp ESCAPE  &trans
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F         &kp G                 &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst   &trans
-&kp LCTRL       &kp Z  &kp X  &kp C      &kp NUMBER_3  &kp H       &kp F1            &trans          &trans     &trans          &trans          &trans           &trans      &trans
+&kp TAB         &kp Q  &kp W  &kp E      &kp R         &kp T                         &trans          &trans               &trans          &kp UP_ARROW    &trans           &kp ESCAPE           &trans
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F         &kp G                 &trans  &trans  &trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst  &trans
+&kp LCTRL       &kp Z  &kp X  &kp C      &kp NUMBER_3  &kp H       &kp F1            &trans          &trans               &trans          &trans          &trans           &trans               &trans
                               &kp SPACE  &kp SPACE     &kp ESCAPE                                    &game_enter_to_arst  &kp SPACE       &kp SPACE
             >;
 
@@ -365,9 +365,9 @@
 
         arst_from_game {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans               &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                    &arst_enter_to_game  &trans  &trans
             >;
 
