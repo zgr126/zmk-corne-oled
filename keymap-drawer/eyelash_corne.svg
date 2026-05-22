@@ -575,16 +575,16 @@ rect.held, rect.combo.held {
 <path d="M371,63 l157,31" class="combo"/>
 <path d="M371,63 l-157,-31" class="combo"/>
 <rect rx="6" ry="6" x="357" y="50" width="28" height="26" class="combo"/>
-<a href="#arst">
-<text x="371" y="63" class="combo tap layer-activator">arst</text>
+<a href="#game">
+<text x="371" y="63" class="combo tap layer-activator">game</text>
 </a><text x="371" y="74" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M343,66 l185,29" class="combo"/>
 <path d="M343,66 l-185,-29" class="combo"/>
 <rect rx="6" ry="6" x="329" y="53" width="28" height="26" class="combo"/>
-<a href="#game">
-<text x="343" y="66" class="combo tap layer-activator">game</text>
+<a href="#qwer">
+<text x="343" y="66" class="combo tap layer-activator">qwer</text>
 </a><text x="343" y="77" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -1279,16 +1279,16 @@ rect.held, rect.combo.held {
 <path d="M371,63 l157,31" class="combo"/>
 <path d="M371,63 l-157,-31" class="combo"/>
 <rect rx="6" ry="6" x="357" y="50" width="28" height="26" class="combo"/>
-<a href="#arst">
-<text x="371" y="63" class="combo tap layer-activator">arst</text>
+<a href="#game">
+<text x="371" y="63" class="combo tap layer-activator">game</text>
 </a><text x="371" y="74" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M343,66 l185,29" class="combo"/>
 <path d="M343,66 l-185,-29" class="combo"/>
 <rect rx="6" ry="6" x="329" y="53" width="28" height="26" class="combo"/>
-<a href="#game">
-<text x="343" y="66" class="combo tap layer-activator">game</text>
+<a href="#qwer">
+<text x="343" y="66" class="combo tap layer-activator">qwer</text>
 </a><text x="343" y="77" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -1635,16 +1635,16 @@ rect.held, rect.combo.held {
 <path d="M371,63 l157,31" class="combo"/>
 <path d="M371,63 l-157,-31" class="combo"/>
 <rect rx="6" ry="6" x="357" y="50" width="28" height="26" class="combo"/>
-<a href="#arst">
-<text x="371" y="63" class="combo tap layer-activator">arst</text>
+<a href="#game">
+<text x="371" y="63" class="combo tap layer-activator">game</text>
 </a><text x="371" y="74" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M343,66 l185,29" class="combo"/>
 <path d="M343,66 l-185,-29" class="combo"/>
 <rect rx="6" ry="6" x="329" y="53" width="28" height="26" class="combo"/>
-<a href="#game">
-<text x="343" y="66" class="combo tap layer-activator">game</text>
+<a href="#qwer">
+<text x="343" y="66" class="combo tap layer-activator">qwer</text>
 </a><text x="343" y="77" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -1993,16 +1993,16 @@ rect.held, rect.combo.held {
 <path d="M371,63 l157,31" class="combo"/>
 <path d="M371,63 l-157,-31" class="combo"/>
 <rect rx="6" ry="6" x="357" y="50" width="28" height="26" class="combo"/>
-<a href="#arst">
-<text x="371" y="63" class="combo tap layer-activator">arst</text>
+<a href="#game">
+<text x="371" y="63" class="combo tap layer-activator">game</text>
 </a><text x="371" y="74" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M343,66 l185,29" class="combo"/>
 <path d="M343,66 l-185,-29" class="combo"/>
 <rect rx="6" ry="6" x="329" y="53" width="28" height="26" class="combo"/>
-<a href="#game">
-<text x="343" y="66" class="combo tap layer-activator">game</text>
+<a href="#qwer">
+<text x="343" y="66" class="combo tap layer-activator">qwer</text>
 </a><text x="343" y="77" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -2352,16 +2352,16 @@ rect.held, rect.combo.held {
 <path d="M371,63 l157,31" class="combo"/>
 <path d="M371,63 l-157,-31" class="combo"/>
 <rect rx="6" ry="6" x="357" y="50" width="28" height="26" class="combo"/>
-<a href="#arst">
-<text x="371" y="63" class="combo tap layer-activator">arst</text>
+<a href="#game">
+<text x="371" y="63" class="combo tap layer-activator">game</text>
 </a><text x="371" y="74" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M343,66 l185,29" class="combo"/>
 <path d="M343,66 l-185,-29" class="combo"/>
 <rect rx="6" ry="6" x="329" y="53" width="28" height="26" class="combo"/>
-<a href="#game">
-<text x="343" y="66" class="combo tap layer-activator">game</text>
+<a href="#qwer">
+<text x="343" y="66" class="combo tap layer-activator">qwer</text>
 </a><text x="343" y="77" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -2705,16 +2705,16 @@ rect.held, rect.combo.held {
 <path d="M371,63 l157,31" class="combo"/>
 <path d="M371,63 l-157,-31" class="combo"/>
 <rect rx="6" ry="6" x="357" y="50" width="28" height="26" class="combo"/>
-<a href="#arst">
-<text x="371" y="63" class="combo tap layer-activator">arst</text>
+<a href="#game">
+<text x="371" y="63" class="combo tap layer-activator">game</text>
 </a><text x="371" y="74" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M343,66 l185,29" class="combo"/>
 <path d="M343,66 l-185,-29" class="combo"/>
 <rect rx="6" ry="6" x="329" y="53" width="28" height="26" class="combo"/>
-<a href="#game">
-<text x="343" y="66" class="combo tap layer-activator">game</text>
+<a href="#qwer">
+<text x="343" y="66" class="combo tap layer-activator">qwer</text>
 </a><text x="343" y="77" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -3057,16 +3057,16 @@ rect.held, rect.combo.held {
 <path d="M371,63 l157,31" class="combo"/>
 <path d="M371,63 l-157,-31" class="combo"/>
 <rect rx="6" ry="6" x="357" y="50" width="28" height="26" class="combo"/>
-<a href="#arst">
-<text x="371" y="63" class="combo tap layer-activator">arst</text>
+<a href="#game">
+<text x="371" y="63" class="combo tap layer-activator">game</text>
 </a><text x="371" y="74" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M343,66 l185,29" class="combo"/>
 <path d="M343,66 l-185,-29" class="combo"/>
 <rect rx="6" ry="6" x="329" y="53" width="28" height="26" class="combo"/>
-<a href="#game">
-<text x="343" y="66" class="combo tap layer-activator">game</text>
+<a href="#qwer">
+<text x="343" y="66" class="combo tap layer-activator">qwer</text>
 </a><text x="343" y="77" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">

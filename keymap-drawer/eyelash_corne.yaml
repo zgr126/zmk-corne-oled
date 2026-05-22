@@ -446,10 +446,10 @@ combos:
   k: '&soft_off'
   l: [arst, game, broswer, nav, mouse, sym, num]
 - p: [20, 3]
-  k: {t: arst, h: toggle}
+  k: {t: game, h: toggle}
   l: [arst, game, broswer, nav, mouse, sym, num]
 - p: [20, 2]
-  k: {t: game, h: toggle}
+  k: {t: qwer, h: toggle}
   l: [arst, game, broswer, nav, mouse, sym, num]
 - p: [20, 1]
   k: {t: arst, h: toggle}
