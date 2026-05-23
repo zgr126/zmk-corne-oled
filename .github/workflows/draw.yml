@@ -1,19 +1,56 @@
 name: Draw Keymap
+
 on:
   workflow_dispatch:
   push:
     paths:
       - "config/**"
-      - .github/workflows/draw.yml
-      - keymap_drawer.config.yaml
+      - ".github/workflows/draw.yml"
+      - "keymap_drawer.config.yaml"
+
+permissions:
+  contents: write
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@v0.23.0
-    permissions:
-      contents: write
-    with:
-      commit_message: "[Draw] ${{ github.event.head_commit.message }}"
-      destination: "commit"
-      fail_on_error: ${{ fromJSON(true) }}
-      install_version: "0.23.0"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          persist-credentials: true
+
+      - name: Install keymap-drawer
+        run: pipx install "keymap-drawer==0.23.0"
+
+      - name: Install west
+        run: pipx install west
+
+      - name: Fetch west modules
+        run: |
+          west init -l config
+          west config --local manifest.project-filter " -zmk,-zephyr"
+          west update --fetch-opt=--filter=tree:0
+
+      - name: Draw keymap
+        run: |
+          mkdir -p keymap-drawer
+          keymap -c keymap_drawer.config.yaml parse -z config/eyelash_corne.keymap > keymap-drawer/eyelash_corne.yaml
+          keymap -c keymap_drawer.config.yaml draw keymap-drawer/eyelash_corne.yaml -j config/eyelash_corne.json > keymap-drawer/eyelash_corne.svg
+
+      - name: Commit updated images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git add keymap-drawer/*.svg keymap-drawer/*.yaml
+          if git diff --cached --quiet; then
+            echo "No keymap drawing changes to commit."
+            exit 0
+          fi
+          cat > commit-message.txt <<'EOF'
+          [Draw] ${{ github.event.head_commit.message || 'manual run' }}
+          EOF
+          git commit -F commit-message.txt
+          git push origin "HEAD:${{ github.ref_name }}"
