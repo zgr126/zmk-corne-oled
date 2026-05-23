@@ -406,7 +406,7 @@
 &trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                       &trans          &kp EQUAL             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS     &trans
 &trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0            &trans  &trans  &trans  &kp NON_US_BACKSLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
 &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans            &trans          &kp X                 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-                              &trans        &trans        &trans                                          &trans                &trans        &trans
+                              &kp PERIOD    &kp NUMBER_0  &trans                                          &trans                &trans        &trans
             >;
 
             label = "num";
@@ -448,10 +448,10 @@
 
         sym {
             bindings = <
-&trans  &trans  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PIPE                         &trans          &kp TILDE       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp COLON             &trans
-&trans  &trans  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp BACKSLASH            &trans  &trans  &trans  &kp MINUS       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp SEMICOLON         &trans
-&trans  &trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp QUESTION   &trans            &trans          &kp UNDERSCORE  &kp EXCL       &kp AT_SIGN   &kp HASH              &kp NON_US_BACKSLASH  &trans
-                                 &trans        &trans                &trans                                           &trans          &trans         &trans
+&trans  &trans  &kp AMPERSAND    &kp ASTERISK   &kp LESS_THAN  &kp GREATER_THAN                    &trans          &kp TILDE       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp COLON             &trans
+&trans  &trans  &kp DOLLAR       &kp PERCENT    &kp CARET      &trans                      &trans  &trans  &trans  &kp MINUS       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp SEMICOLON         &trans
+&trans  &trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp QUESTION      &trans            &trans          &kp UNDERSCORE  &kp EXCL       &kp AT_SIGN   &kp HASH              &kp NON_US_BACKSLASH  &trans
+                                 &kp BACKSLASH  &kp SLASH      &kp PIPE                                            &trans          &trans         &trans
             >;
 
             label = "sym";
