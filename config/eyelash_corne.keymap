@@ -267,6 +267,96 @@
             key-positions = <31 32>;
             layers = <0 2 3 4 5 6 1>;
         };
+
+        mao {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <14 15>;
+        };
+
+        fen {
+            bindings = <&kp COLON>;
+            key-positions = <30 29>;
+        };
+
+        r-mao {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <25 26>;
+        };
+
+        r-fen {
+            bindings = <&kp COLON>;
+            key-positions = <39 40>;
+        };
+
+        danyin {
+            bindings = <&kp SQT>;
+            key-positions = <1 2>;
+        };
+
+        shuangyin {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <1 3>;
+        };
+
+        r-danyin {
+            bindings = <&kp SQT>;
+            key-positions = <11 10>;
+        };
+
+        r-shuangyin {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <11 9>;
+        };
+
+        under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <30 32>;
+        };
+
+        min {
+            bindings = <&kp MINUS>;
+            key-positions = <17 15>;
+        };
+
+        r-min {
+            bindings = <&kp MINUS>;
+            key-positions = <23 25>;
+        };
+
+        r-under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <37 39>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <14 16>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <29 31>;
+        };
+
+        r-plus {
+            bindings = <&kp PLUS>;
+            key-positions = <24 26>;
+        };
+
+        r-equl {
+            bindings = <&kp EQUAL>;
+            key-positions = <38 40>;
+        };
+
+        l-to-num {
+            bindings = <&to 2>;
+            key-positions = <43 14>;
+        };
+
+        l-to-fuhao {
+            bindings = <&to 6>;
+            key-positions = <43 29>;
+        };
     };
 
     keymap {
@@ -277,7 +367,7 @@
 &kp GRAVE  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J            &kp L              &kp U         &kp Y            &kp SQT          &trans
 &kp LSHFT  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M            &hm RIGHT_SHIFT N  &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_GUI O  &trans
 &kp LCTRL  &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K            &kp H              &kp COMMA     &kp PERIOD       &kp SLASH        &trans
-                                           &lt 2 ESCAPE  &lt 3 SPACE       &lt 4 TAB                                                                &lt L_SYM ENTER  &lt 3 BACKSPACE    &lt 2 DELETE
+                                           &lt 5 ESCAPE  &lt 3 SPACE       &lt 4 TAB                                                                &lt L_SYM ENTER  &lt 2 BACKSPACE    &lt 3 DELETE
             >;
 
             label = "arst";
@@ -298,10 +388,10 @@
 
         num {
             bindings = <
-&trans  &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                      &trans          &kp EQUAL    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &trans
-&trans  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERCENT            &trans  &trans  &trans  &kp PERCENT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
-&trans  &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp X        &trans            &trans          &kp X        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
-                                    &trans        &trans        &trans                                         &trans       &trans        &trans
+&trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                       &trans          &kp EQUAL             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS     &trans
+&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0            &trans  &trans  &trans  &kp NON_US_BACKSLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans            &trans          &kp X                 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans
+                              &trans        &trans        &trans                                          &trans                &trans        &trans
             >;
 
             label = "num";
@@ -309,9 +399,9 @@
 
         nav {
             bindings = <
-&trans  &kp LC(Q)  &kp LC(W)  &kp LC(F)  &kp LC(P)  &kp LC(Y)                            &msc SCRL_UP                     &kp K_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp K_UNDO  &trans
-&trans  &kp LC(A)  &kp LC(R)  &kp LC(S)  &kp LC(T)  &kp LC(G)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp CAPS    &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT   &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(D)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans
+&trans  &kp LC(Q)  &kp LC(W)  &kp LC(F)  &kp LC(P)  &kp LC(Y)                            &msc SCRL_UP                     &kp K_REDO  &kp C_AC_PASTE  &msc SCRL_DOWN  &msc SCRL_UP  &kp K_UNDO  &trans
+&trans  &kp LC(A)  &kp LC(R)  &kp LC(S)  &kp LC(T)  &kp LC(G)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp CAPS    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT   &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(D)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END     &trans
                               &trans     &trans     &trans                                                                &trans      &trans          &trans
             >;
 
@@ -319,11 +409,11 @@
             sensor-bindings = <&inc_dec_kp PLUS MINUS>;
         };
 
-        mouse {
+        l-AII-mouse {
             bindings = <
 &kp BACKSPACE   &kp SINGLE_QUOTE  &kp Y       &kp U       &kp L      &kp J                     &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
 &kp LEFT_SHIFT  &kp O             &kp I       &kp E       &kp N      &kp M             &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&kp LCTRL       &kp SLASH         &kp PERIOD  &kp COMMA   &kp H      &kp K   &trans            &trans          &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&kp ENTER       &kp SLASH         &kp PERIOD  &kp COMMA   &kp H      &kp K   &trans            &trans          &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
                                               &kp DELETE  &kp ENTER  &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
             >;
 
@@ -332,10 +422,10 @@
 
         broswer {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans          &trans  &kp LA(LEFT)     &kp LC(W)  &kp LC(LS(T))  &kp LA(RIGHT)  &trans
-&trans  &trans        &trans        &trans        &trans        &bt BT_CLR              &trans  &trans  &trans  &trans  &kp LC(LS(TAB))  &kp LC(W)  &kp LC(T)      &kp LC(TAB)    &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &trans            &trans          &trans  &kp LC(H)        &kp LC(E)  &kp LC(F5)     &kp LC(D)      &trans
-                                    &trans        &trans        &trans                                          &trans  &trans           &trans
+&bt BT_SEL 0  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans          &trans  &kp LA(LEFT)     &kp LC(W)  &kp LC(LS(T))  &kp LA(RIGHT)  &trans
+&bt BT_SEL 1  &kp LS(LC(TAB))  &kp LC(W)     &kp LC(T)     &kp LS(TAB)   &bt BT_CLR              &trans  &trans  &trans  &trans  &kp LC(LS(TAB))  &kp LC(W)  &kp LC(T)      &kp LC(TAB)    &trans
+&trans        &trans           &trans        &trans        &trans        &trans        &trans            &trans          &trans  &kp LC(H)        &kp LC(E)  &kp LC(F5)     &kp LC(D)      &trans
+                                             &trans        &trans        &trans                                          &trans  &trans           &trans
             >;
 
             label = "broswer";
@@ -343,10 +433,10 @@
 
         sym {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp TILDE       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp COLON             &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp MINUS       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp SEMICOLON         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp UNDERSCORE  &kp EXCL       &kp AT_SIGN   &kp HASH              &kp NON_US_BACKSLASH  &trans
-                        &trans  &trans  &trans                                    &trans          &trans         &trans
+&trans  &trans  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PIPE                         &trans          &kp TILDE       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp COLON             &trans
+&trans  &trans  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp BACKSLASH            &trans  &trans  &trans  &kp MINUS       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp SEMICOLON         &trans
+&trans  &trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp QUESTION   &trans            &trans          &kp UNDERSCORE  &kp EXCL       &kp AT_SIGN   &kp HASH              &kp NON_US_BACKSLASH  &trans
+                                 &trans        &trans                &trans                                           &trans          &trans         &trans
             >;
 
             label = "sym";
@@ -355,8 +445,8 @@
         game {
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E      &kp R         &kp T                         &trans          &trans               &trans          &kp UP_ARROW    &trans           &kp ESCAPE           &trans
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F         &kp G                 &trans  &trans  &trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst  &trans
-&kp LCTRL       &kp Z  &kp X  &kp C      &kp NUMBER_3  &kp H       &kp F1            &trans          &trans               &trans          &trans          &trans           &trans               &trans
+&kp LCTRL       &kp A  &kp S  &kp D      &kp F         &kp G                 &trans  &trans  &trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst  &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp NUMBER_3  &kp H       &kp F1            &trans          &trans               &trans          &trans          &trans           &trans               &trans
                               &kp SPACE  &kp SPACE     &kp ESCAPE                                    &game_enter_to_arst  &kp SPACE       &kp SPACE
             >;
 
