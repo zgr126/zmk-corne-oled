@@ -180,8 +180,8 @@ layers:
   - Ctl+Z
   - Ctl+X
   - Ctl+C
-  - Ctl+D
   - Ctl+V
+  - Ctl+D
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
   - Ins
@@ -197,7 +197,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   mouse:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '''', s: '"'}
   - Y
   - U
@@ -239,8 +239,8 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:mouse-left-click-outline$$
