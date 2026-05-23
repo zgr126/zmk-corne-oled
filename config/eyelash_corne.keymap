@@ -311,7 +311,7 @@
             bindings = <
 &trans  &kp LC(Q)  &kp LC(W)  &kp LC(F)  &kp LC(P)  &kp LC(Y)                            &msc SCRL_UP                     &kp K_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp K_UNDO  &trans
 &trans  &kp LC(A)  &kp LC(R)  &kp LC(S)  &kp LC(T)  &kp LC(G)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp CAPS    &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT   &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(D)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END     &trans
                               &trans     &trans     &trans                                                                &trans      &trans          &trans
             >;
 
@@ -321,10 +321,10 @@
 
         mouse {
             bindings = <
-&trans          &kp SINGLE_QUOTE  &kp Y       &kp U      &kp L   &kp J                     &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
-&kp LEFT_SHIFT  &kp O             &kp I       &kp E      &kp N   &kp M             &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&kp LCTRL       &kp SLASH         &kp PERIOD  &kp COMMA  &kp H   &kp K   &trans            &trans          &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                                              &trans     &trans  &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
+&kp BACKSPACE   &kp SINGLE_QUOTE  &kp Y       &kp U       &kp L      &kp J                     &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
+&kp LEFT_SHIFT  &kp O             &kp I       &kp E       &kp N      &kp M             &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&kp LCTRL       &kp SLASH         &kp PERIOD  &kp COMMA   &kp H      &kp K   &trans            &trans          &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                                              &kp DELETE  &kp ENTER  &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
             >;
 
             label = "mouse";
