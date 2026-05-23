@@ -113,7 +113,7 @@ layers:
   - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - '4'
   - '5'
   - '6'
@@ -142,7 +142,7 @@ layers:
   - .
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -324,7 +324,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - '!'
   - '@'
   - '#'
@@ -338,7 +338,7 @@ layers:
   - \
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -435,8 +435,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&arst_enter_to_game'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -541,12 +541,12 @@ combos:
 - p: [38, 40]
   k: {t: '=', s: +}
 - p: [43, 14]
-  k: {t: num, h: toggle}
+  k: num
 - p: [43, 29]
-  k: {t: sym, h: toggle}
+  k: sym
 - p: [1, 4]
   k: {t: '`', s: '~'}
 - p: [1, 5]
   k: '~'
 - p: [42, 43]
-  k: {t: arst_from_game, h: toggle}
+  k: arst_from_game
