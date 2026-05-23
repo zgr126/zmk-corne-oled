@@ -349,12 +349,12 @@
         };
 
         l-to-num {
-            bindings = <&to 2>;
+            bindings = <&mo 2>;
             key-positions = <43 14>;
         };
 
         l-to-fuhao {
-            bindings = <&to 6>;
+            bindings = <&mo 6>;
             key-positions = <43 29>;
         };
 
@@ -369,7 +369,7 @@
         };
 
         to-l-nav {
-            bindings = <&to 8>;
+            bindings = <&mo 8>;
             key-positions = <42 43>;
         };
     };
