@@ -43,12 +43,12 @@ layers:
   - .
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-esc$$', h: num}
+  - {t: '$$mdi:keyboard-esc$$', h: broswer}
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - {t: '$$mdi:keyboard-tab$$', h: mouse}
   - {t: '$$mdi:keyboard-return$$', h: sym}
-  - {t: '$$mdi:backspace$$', h: nav}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: num}
+  - {t: '$$mdi:backspace$$', h: num}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: nav}
   qwer:
   - {t: '`', s: '~'}
   - Q
@@ -100,7 +100,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: num}
   num:
   - {t: '$$mdi:transfer$$', type: trans}
-  - +
+  - {t: '$$mdi:transfer$$', type: trans}
   - '7'
   - '8'
   - '9'
@@ -110,29 +110,29 @@ layers:
   - '7'
   - '8'
   - '9'
-  - +
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '0'
-  - '4'
-  - '5'
-  - '6'
-  - '%'
+  - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '%'
   - '4'
   - '5'
   - '6'
   - '0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - .
+  - {t: '$$mdi:transfer$$', type: trans}
+  - \
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '1'
   - '2'
   - '3'
-  - X
+  - .
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - X
@@ -140,12 +140,12 @@ layers:
   - '2'
   - '3'
   - .
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   nav:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -157,8 +157,8 @@ layers:
   - $$mdi:pan-up$$
   - REDO
   - AC PASTE
-  - AC COPY
-  - AC CUT
+  - $$mdi:pan-down$$
+  - $$mdi:pan-up$$
   - UNDO
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   mouse:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '''', s: '"'}
@@ -225,7 +225,7 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: /, s: '?'}
   - .
   - {t: ',', s: <}
@@ -246,7 +246,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   broswer:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -259,11 +259,11 @@ layers:
   - Ctl+Sft+T
   - Alt+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - Sft+Ctl+$$mdi:keyboard-tab$$
+  - Ctl+W
+  - Ctl+T
+  - $$mdi:keyboard-tab-reverse$$
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -288,7 +288,7 @@ layers:
   - Ctl+F5
   - Ctl+D
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -297,10 +297,10 @@ layers:
   sym:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&'
+  - '*'
+  - (
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - '&'
@@ -310,10 +310,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $
+  - '%'
+  - ^
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -325,10 +325,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - _
@@ -357,7 +357,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - A
   - S
   - D
@@ -372,7 +372,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - '&game_enter_to_arst'
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -508,3 +508,39 @@ combos:
 - p: [31, 32]
   k: '}'
   l: [arst, num, nav, mouse, broswer, sym, qwer]
+- p: [14, 15]
+  k: {t: ;, s: ':'}
+- p: [30, 29]
+  k: ':'
+- p: [25, 26]
+  k: {t: ;, s: ':'}
+- p: [39, 40]
+  k: ':'
+- p: [1, 2]
+  k: {t: '''', s: '"'}
+- p: [1, 3]
+  k: '"'
+- p: [11, 10]
+  k: {t: '''', s: '"'}
+- p: [11, 9]
+  k: '"'
+- p: [30, 32]
+  k: _
+- p: [17, 15]
+  k: {t: '-', s: _}
+- p: [23, 25]
+  k: {t: '-', s: _}
+- p: [37, 39]
+  k: _
+- p: [14, 16]
+  k: +
+- p: [29, 31]
+  k: {t: '=', s: +}
+- p: [24, 26]
+  k: +
+- p: [38, 40]
+  k: {t: '=', s: +}
+- p: [43, 14]
+  k: {t: num, h: toggle}
+- p: [43, 29]
+  k: {t: sym, h: toggle}
