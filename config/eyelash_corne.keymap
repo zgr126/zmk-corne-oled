@@ -351,11 +351,13 @@
         l-to-num {
             bindings = <&mo 2>;
             key-positions = <43 14>;
+            slow-release;
         };
 
         l-to-fuhao {
             bindings = <&mo 6>;
             key-positions = <43 29>;
+            slow-release;
         };
 
         zuoshang {
