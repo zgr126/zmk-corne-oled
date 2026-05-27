@@ -149,11 +149,11 @@ layers:
   - {type: held alternate}
   nav:
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Q
-  - Ctl+W
-  - Ctl+F
-  - Ctl+P
-  - Ctl+Y
+  - Q
+  - Y
+  - U
+  - Ctl+L
+  - Ctl+J
   - $$mdi:pan-up$$
   - REDO
   - AC PASTE
@@ -162,11 +162,11 @@ layers:
   - UNDO
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+A
+  - Ctl+O
   - Ctl+R
-  - Ctl+S
-  - Ctl+T
-  - Ctl+G
+  - Ctl+E
+  - Ctl+N
+  - Ctl+M
   - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-right$$
@@ -177,11 +177,11 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+D
+  - {t: Ctl+/, s: 'Ctl+?'}
+  - Ctl+.
+  - {t: 'Ctl+,', s: Ctl+<}
+  - Ctl+H
+  - Ctl+K
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
   - Ins
@@ -295,8 +295,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   sym:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - (
+  - )
   - '&'
   - '*'
   - <
@@ -308,8 +308,8 @@ layers:
   - (
   - ':'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - $
   - '%'
   - ^
@@ -323,8 +323,8 @@ layers:
   - ^
   - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - '{'
+  - {t: '}', type: held alternate}
   - '!'
   - '@'
   - '#'
@@ -357,7 +357,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -372,7 +372,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - '&game_enter_to_arst'
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -386,7 +386,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-esc$$
   - '&game_enter_to_arst'
