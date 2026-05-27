@@ -422,10 +422,10 @@
 
         nav {
             bindings = <
-&trans  &kp LC(Q)  &kp LC(W)  &kp LC(F)  &kp LC(P)  &kp LC(Y)                            &msc SCRL_UP                     &kp K_REDO  &kp C_AC_PASTE  &msc SCRL_DOWN  &msc SCRL_UP  &kp K_UNDO  &trans
-&trans  &kp LC(A)  &kp LC(R)  &kp LC(S)  &kp LC(T)  &kp LC(G)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp CAPS    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT   &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(D)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END     &trans
-                              &trans     &trans     &trans                                                                &trans      &trans          &trans
+&trans  &kp Q          &kp Y           &kp U          &kp LC(L)  &kp LC(J)                            &msc SCRL_UP                     &kp K_REDO  &kp C_AC_PASTE  &msc SCRL_DOWN  &msc SCRL_UP  &kp K_UNDO  &trans
+&trans  &kp LC(O)      &kp LC(R)       &kp LC(E)      &kp LC(N)  &kp LC(M)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp CAPS    &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT   &trans
+&trans  &kp LC(SLASH)  &kp LC(PERIOD)  &kp LC(COMMA)  &kp LC(H)  &kp LC(K)  &trans                    &msc SCRL_DOWN                   &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END     &trans
+                                       &trans         &trans     &trans                                                                &trans      &trans          &trans
             >;
 
             label = "nav";
@@ -456,10 +456,10 @@
 
         sym {
             bindings = <
-&trans  &trans  &kp AMPERSAND    &kp ASTERISK   &kp LESS_THAN  &kp GREATER_THAN                    &trans          &kp TILDE       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp COLON             &trans
-&trans  &trans  &kp DOLLAR       &kp PERCENT    &kp CARET      &trans                      &trans  &trans  &trans  &kp MINUS       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp SEMICOLON         &trans
-&trans  &trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp QUESTION      &trans            &trans          &kp UNDERSCORE  &kp EXCL       &kp AT_SIGN   &kp HASH              &kp NON_US_BACKSLASH  &trans
-                                 &kp BACKSLASH  &kp SLASH      &kp PIPE                                            &trans          &trans         &trans
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND    &kp ASTERISK   &kp LESS_THAN  &kp GREATER_THAN                    &trans          &kp TILDE       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp COLON             &trans
+&kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR       &kp PERCENT    &kp CARET      &trans                      &trans  &trans  &trans  &kp MINUS       &kp DOLLAR     &kp PERCENT   &kp CARET             &kp SEMICOLON         &trans
+&kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp QUESTION      &trans            &trans          &kp UNDERSCORE  &kp EXCL       &kp AT_SIGN   &kp HASH              &kp NON_US_BACKSLASH  &trans
+                                                              &kp BACKSLASH  &kp SLASH      &kp PIPE                                            &trans          &trans         &trans
             >;
 
             label = "sym";
@@ -467,10 +467,10 @@
 
         game {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E      &kp R         &kp T                         &trans          &trans               &trans          &kp UP_ARROW    &trans           &kp ESCAPE           &trans
-&kp LCTRL       &kp A  &kp S  &kp D      &kp F         &kp G                 &trans  &trans  &trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst  &trans
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp NUMBER_3  &kp H       &kp F1            &trans          &trans               &trans          &trans          &trans           &trans               &trans
-                              &kp SPACE  &kp SPACE     &kp ESCAPE                                    &game_enter_to_arst  &kp SPACE       &kp SPACE
+&kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T                         &trans          &trans               &trans          &kp UP_ARROW    &trans           &kp ESCAPE           &trans
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F         &kp G                 &trans  &trans  &trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst  &trans
+&kp LCTRL       &kp Z  &kp X  &kp C         &kp NUMBER_3  &kp H       &kp F1            &trans          &trans               &trans          &trans          &trans           &trans               &trans
+                              &kp LEFT_ALT  &kp SPACE     &kp ESCAPE                                    &game_enter_to_arst  &kp SPACE       &kp SPACE
             >;
 
             label = "game";
