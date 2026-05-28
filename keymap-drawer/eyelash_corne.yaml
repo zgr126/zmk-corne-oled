@@ -546,10 +546,10 @@ combos:
 - p: [29, 5, 44]
   k: {t: game, h: toggle}
   l: [arst, broswer, nav, mouse, sym, num]
-- p: [44, 5, 14]
+- p: [5, 14, 43]
   k: {t: qwer, h: toggle}
   l: [arst, broswer, nav, mouse, sym, num]
-- p: [1, 5, 44]
+- p: [5, 44, 14]
   k: {t: arst, h: toggle}
   l: [arst, broswer, nav, mouse, sym, num]
 - p: [1, 29]
