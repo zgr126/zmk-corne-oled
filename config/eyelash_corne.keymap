@@ -20,6 +20,7 @@
 #define L_MOUSE_TURBO     14
 
 // game 层追求最低延迟：combo 只在非 game 层启用，避免快速连按被组合键吞键
+
 #define COMBO_LAYERS_NO_GAME L_ARST L_QWER L_NUM L_SYM L_NAV L_RIGHT_ALL L_BROWSER L_ARST_FROM_GAME L_BT L_MOUSE
 #define COMBO_TIMEOUT_MS 30
 
@@ -160,14 +161,14 @@
         toqwer {
             bindings = <&to 1>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
-            key-positions = <44 5 14>;
+            key-positions = <5 14 43>;
             layers = <0 6 4 10 3 2>;
         };
 
         toarst {
             bindings = <&to 0>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
-            key-positions = <1 5 44>;
+            key-positions = <5 44 14>;
             layers = <0 6 4 10 3 2>;
         };
 
