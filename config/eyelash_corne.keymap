@@ -475,7 +475,7 @@
         };
 
         a5 {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp EXCLAMATION>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <9 24>;
             layers = <COMBO_LAYERS_NO_GAME>;
