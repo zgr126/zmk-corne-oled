@@ -397,7 +397,7 @@
         };
 
         a5 {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp EXCLAMATION>;
             key-positions = <9 24>;
         };
     };
