@@ -491,7 +491,7 @@
 &kp ESCAPE  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U        &kp Y            &hm RIGHT_ALT NON_US_BACKSLASH  &trans
 &kp LSHFT   &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O                 &trans
 &kp LCTRL   &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA    &kp PERIOD       &kp SLASH                       &trans
-                                            &lt 6 ESCAPE  &lt 4 SPACE       &lt 7 TAB                                                                &lt 3 ENTER  &lt 2 BACKSPACE    &lt 4 SPACE
+                                            &lt 6 ESCAPE  &lt 4 SPACE       &lt 7 TAB                                                                &lt 4 ENTER  &lt 2 BACKSPACE    &lt 3 SPACE
             >;
 
             label = "arst";
