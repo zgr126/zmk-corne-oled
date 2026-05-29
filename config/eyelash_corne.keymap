@@ -586,8 +586,8 @@
 
         game {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T                         &trans          &trans               &trans          &kp UP_ARROW    &trans           &kp ESCAPE           &trans
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F         &kp G                 &trans  &trans  &trans  &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst  &trans
+&kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T                         &trans          &to 0                &trans          &kp UP_ARROW    &trans           &kp ESCAPE           &trans
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F         &kp G                 &trans  &trans  &trans  &to 0                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst  &trans
 &kp LCTRL       &kp Z  &kp X  &kp C         &kp NUMBER_3  &kp H       &kp F1            &trans          &trans               &trans          &trans          &trans           &trans               &trans
                               &kp LEFT_ALT  &kp SPACE     &kp ESCAPE                                    &game_enter_to_arst  &kp SPACE       &kp SPACE
             >;
