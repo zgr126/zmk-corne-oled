@@ -444,30 +444,30 @@ layers:
   game:
   - $$mdi:keyboard-tab$$
   - Q
-  - W
+  - '&socd_w'
   - E
   - R
   - T
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: arst, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-up-bold$$
+  - '&socd_up'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
-  - A
-  - S
-  - D
+  - '&socd_a'
+  - '&socd_s'
+  - '&socd_d'
   - F
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: arst, h: toggle}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - '&socd_left'
+  - '&socd_down'
+  - '&socd_right'
   - '&game_enter_to_arst'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
