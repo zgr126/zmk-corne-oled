@@ -455,7 +455,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - A
   - S
   - D
@@ -470,7 +470,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - '&game_enter_to_arst'
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -684,3 +684,15 @@ combos:
 - p: [9, 24]
   k: '!'
   l: [arst, qwer, num, sym, nav, r-ALL, broswer, arst_from_game, bt, mouse]
+- p: [31, 32]
+  k: Ctl+C
+- p: [30, 29]
+  k: Ctl+V
+- p: [37, 38]
+  k: Ctl+C
+- p: [39, 40]
+  k: Ctl+V
+- p: [31, 30]
+  k: Ctl+X
+- p: [38, 39]
+  k: Ctl+X
