@@ -481,6 +481,36 @@
             key-positions = <9 24>;
             layers = <COMBO_LAYERS_NO_GAME>;
         };
+
+        cd {
+            bindings = <&kp LC(C)>;
+            key-positions = <31 32>;
+        };
+
+        cv {
+            bindings = <&kp LC(V)>;
+            key-positions = <30 29>;
+        };
+
+        cd2 {
+            bindings = <&kp LC(C)>;
+            key-positions = <37 38>;
+        };
+
+        cv2 {
+            bindings = <&kp LC(V)>;
+            key-positions = <39 40>;
+        };
+
+        cx {
+            bindings = <&kp LC(X)>;
+            key-positions = <31 30>;
+        };
+
+        cx2 {
+            bindings = <&kp LC(X)>;
+            key-positions = <38 39>;
+        };
     };
 
     keymap {
@@ -587,8 +617,8 @@
         game {
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E         &kp R         &kp T                         &trans          &to 0                &trans          &kp UP_ARROW    &trans           &kp ESCAPE           &trans
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F         &kp G                 &trans  &trans  &trans  &to 0                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst  &trans
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp NUMBER_3  &kp H       &kp F1            &trans          &trans               &trans          &trans          &trans           &trans               &trans
+&kp LCTRL       &kp A  &kp S  &kp D         &kp F         &kp G                 &trans  &trans  &trans  &to 0                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &game_enter_to_arst  &trans
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp NUMBER_3  &kp H       &kp F1            &trans          &trans               &trans          &trans          &trans           &trans               &trans
                               &kp LEFT_ALT  &kp SPACE     &kp ESCAPE                                    &game_enter_to_arst  &kp SPACE       &kp SPACE
             >;
 
