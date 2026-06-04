@@ -696,3 +696,5 @@ combos:
   k: Ctl+X
 - p: [38, 39]
   k: Ctl+X
+- p: [44, 5, 30]
+  k: {t: bt, h: toggle}
