@@ -569,10 +569,10 @@
 
         nav {
             bindings = <
-&trans  &kp NON_US_BACKSLASH  &kp Y       &kp U      &kp L   &kp J                             &msc SCRL_UP                     &trans    &kp PAGE_UP    &kp UP_ARROW   &kp PAGE_UP    &trans   &trans
-&trans  &kp O                 &kp I       &kp E      &kp N   &kp M             &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp HOME  &kp LEFT       &kp DOWN       &kp RIGHT      &kp END  &trans
-&trans  &kp SLASH             &kp PERIOD  &kp COMMA  &kp H   &kp K   &trans                    &msc SCRL_DOWN                   &trans    &kp PAGE_DOWN  &kp PAGE_DOWN  &kp PAGE_DOWN  &trans   &trans
-                                          &trans     &trans  &trans                                                             &trans    &trans         &trans
+&trans  &kp NON_US_BACKSLASH  &kp Y       &kp U      &kp L   &kp J                             &msc SCRL_UP                     &mkp RCLK  &kp PAGE_UP    &kp UP_ARROW   &kp PAGE_UP    &trans   &trans
+&trans  &kp O                 &kp I       &kp E      &kp N   &kp M             &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp HOME   &kp LEFT       &kp DOWN       &kp RIGHT      &kp END  &trans
+&trans  &kp SLASH             &kp PERIOD  &kp COMMA  &kp H   &kp K   &trans                    &msc SCRL_DOWN                   &trans     &kp PAGE_DOWN  &kp PAGE_DOWN  &kp PAGE_DOWN  &trans   &trans
+                                          &trans     &trans  &trans                                                             &trans     &trans         &trans
             >;
 
             label = "nav";
@@ -612,11 +612,13 @@
 
         bt {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bl BL_TOG    &bl BL_INC    &bl BL_DEC    &bl BL_CYCLE  &to 0           &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans                                            &trans  &trans  &trans
+&trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                      &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bl BL_TOG     &bl BL_INC     &bl BL_DEC     &bl BL_CYCLE   &to 0           &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                      &bt BT_PRV     &bt BT_NXT     &bt BT_CLR_ALL                                    &trans  &trans  &trans
             >;
+
+            label = "bt";
         };
 
         game {
