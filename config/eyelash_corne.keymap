@@ -511,6 +511,11 @@
             bindings = <&kp LC(X)>;
             key-positions = <38 39>;
         };
+
+        bt {
+            bindings = <&to 8>;
+            key-positions = <44 5 30>;
+        };
     };
 
     keymap {
