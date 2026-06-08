@@ -115,7 +115,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&kp ENTER &to 7>;
+            bindings = <&kp ENTER &to 9>;
         };
 
         arst_enter_to_game: arst_enter_to_game {
@@ -123,7 +123,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&kp ENTER &to 9>;
+            bindings = <&kp ENTER &to 7>;
         };
     };
 
@@ -148,273 +148,256 @@
             bindings = <&soft_off>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <1 15 29>;
-            layers = <0 6 4 10 3 2>;
+            layers = <0 5 4 10 3 2>;
         };
 
         togame {
-            bindings = <&to 9>;
+            bindings = <&to 7>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
-            key-positions = <29 5 44>;
-            layers = <0 6 4 10 3 2>;
+            key-positions = <5 44 30>;
+            layers = <0 5 4 10 3 2>;
         };
 
         toqwer {
             bindings = <&to 1>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
-            key-positions = <5 14 43>;
-            layers = <0 6 4 10 3 2>;
+            key-positions = <5 43 15>;
+            layers = <0 5 4 10 3 2>;
         };
 
         toarst {
             bindings = <&to 0>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <5 44 14>;
-            layers = <0 6 4 10 3 2>;
+            layers = <0 5 4 10 3 2>;
         };
 
         f1 {
             bindings = <&kp F1>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <1 29>;
-            layers = <0 4 2 10 6 3 1>;
+            layers = <0 4 2 10 5 3 1>;
         };
 
         f2 {
             bindings = <&kp F2>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <2 30>;
-            layers = <0 2 10 4 6 3 1>;
+            layers = <0 2 10 4 5 3 1>;
         };
 
         f3 {
             bindings = <&kp F3>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <3 31>;
-            layers = <0 2 4 10 6 3 1>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         f4 {
             bindings = <&kp F4>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <4 32>;
-            layers = <0 2 4 10 6 3 1>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         f5 {
             bindings = <&kp F5>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <5 33>;
-            layers = <0 2 4 10 6 3 1>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         f6 {
             bindings = <&kp F6>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <7 36>;
-            layers = <0 2 4 10 6 3 1>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         f7 {
             bindings = <&kp F7>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <8 37>;
-            layers = <2 0 4 10 6 3 1>;
+            layers = <2 0 4 10 5 3 1>;
         };
 
         f8 {
             bindings = <&kp F8>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <9 38>;
-            layers = <2 0 4 10 6 3 1>;
+            layers = <2 0 4 10 5 3 1>;
         };
 
         f9 {
             bindings = <&kp F9>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <10 39>;
-            layers = <2 0 4 10 6 3 1>;
+            layers = <2 0 4 10 5 3 1>;
         };
 
         f10 {
             bindings = <&kp F10>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <11 40>;
-            layers = <0 2 4 10 6 3 1>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         f11 {
             bindings = <&kp F11>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <10 38>;
-            layers = <0 2 4 10 6 3 1>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         f12 {
             bindings = <&kp F12>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <11 39>;
-            layers = <0 2 4 10 6 3 1>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         lkuohao {
             bindings = <&kp BACKSPACE>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <16 17>;
-            layers = <0 2 4 10 6 3 1>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         rkuohao {
             bindings = <&kp BACKSPACE>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <23 24>;
-            layers = <0 2 4 10 6 3 1>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         l-m {
             bindings = <&kp DELETE>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
-            key-positions = <15 16>;
-            layers = <0 2 4 10 6 3 1>;
+            key-positions = <15 14>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         r-m {
             bindings = <&kp DELETE>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
-            key-positions = <24 25>;
-            layers = <0 2 4 10 6 3 1>;
+            key-positions = <25 26>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         l-b {
             bindings = <&kp ENTER>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
-            key-positions = <14 15>;
-            layers = <0 2 4 10 3 6 1>;
+            key-positions = <15 16>;
+            layers = <0 2 4 10 3 5 1>;
         };
 
         r-b {
             bindings = <&kp ENTER>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
-            key-positions = <25 26>;
-            layers = <0 2 4 10 6 3 1>;
+            key-positions = <25 24>;
+            layers = <0 2 4 10 5 3 1>;
         };
 
         mao {
             bindings = <&kp SEMICOLON>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <14 1>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         fen {
             bindings = <&kp COLON>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <15 2>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         r-mao {
             bindings = <&kp SEMICOLON>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <11 26>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         r-fen {
             bindings = <&kp COLON>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <10 25>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         danyin {
             bindings = <&kp SQT>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <1 2>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         shuangyin {
             bindings = <&kp DOUBLE_QUOTES>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <1 3>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         r-danyin {
             bindings = <&kp SQT>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <11 10>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         r-shuangyin {
             bindings = <&kp DOUBLE_QUOTES>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <11 9>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         under {
             bindings = <&kp UNDERSCORE>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <30 32>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         min {
             bindings = <&kp MINUS>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <17 15>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         r-min {
             bindings = <&kp MINUS>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <23 25>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         r-under {
             bindings = <&kp UNDERSCORE>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <37 39>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <14 16>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <29 31>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         r-plus {
             bindings = <&kp PLUS>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <24 26>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         r-equl {
             bindings = <&kp EQUAL>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <38 40>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         l-to-num {
             bindings = <&mo 2>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <43 14>;
-            layers = <COMBO_LAYERS_NO_GAME>;
             slow-release;
         };
 
@@ -422,7 +405,6 @@
             bindings = <&mo 3>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <43 29>;
-            layers = <COMBO_LAYERS_NO_GAME>;
             slow-release;
         };
 
@@ -430,56 +412,48 @@
             bindings = <&kp GRAVE>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <1 4>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         zuoshang2 {
             bindings = <&kp TILDE>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <1 5>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         aa {
             bindings = <&kp LEFT_PARENTHESIS>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <4 17>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         a2 {
             bindings = <&kp RIGHT_PARENTHESIS>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <5 18>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         a3 {
             bindings = <&kp LEFT_BRACKET>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <7 22>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         a4 {
             bindings = <&kp RIGHT_BRACKET>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <8 23>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         a6 {
             bindings = <&kp QUESTION>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <3 16>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         a5 {
             bindings = <&kp EXCLAMATION>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
             key-positions = <9 24>;
-            layers = <COMBO_LAYERS_NO_GAME>;
         };
 
         cd {
@@ -489,7 +463,7 @@
 
         cv {
             bindings = <&kp LC(V)>;
-            key-positions = <30 29>;
+            key-positions = <30 31>;
         };
 
         cd2 {
@@ -499,22 +473,22 @@
 
         cv2 {
             bindings = <&kp LC(V)>;
-            key-positions = <39 40>;
+            key-positions = <39 38>;
         };
 
         cx {
             bindings = <&kp LC(X)>;
-            key-positions = <31 30>;
+            key-positions = <30 29>;
         };
 
         cx2 {
             bindings = <&kp LC(X)>;
-            key-positions = <38 39>;
+            key-positions = <39 40>;
         };
 
         bt {
-            bindings = <&to 8>;
-            key-positions = <44 5 30>;
+            bindings = <&to 6>;
+            key-positions = <44 5 31>;
         };
     };
 
@@ -526,7 +500,7 @@
 &kp ESCAPE  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U        &kp Y            &hm RIGHT_ALT NON_US_BACKSLASH  &trans
 &kp LSHFT   &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O                 &trans
 &kp LCTRL   &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA    &kp PERIOD       &kp SLASH                       &trans
-                                            &lt 6 ESCAPE  &lt 4 SPACE       &lt 7 TAB                                                                &lt 4 ENTER  &lt 2 BACKSPACE    &lt 3 SPACE
+                                            &lt 5 ESCAPE  &lt 4 SPACE       &lt 9 TAB                                                                &lt 4 ENTER  &lt 2 BACKSPACE    &lt 3 SPACE
             >;
 
             label = "arst";
@@ -538,7 +512,7 @@
 &kp ESCAPE  &kp Q           &kp W           &kp E         &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y        &kp U              &kp I         &kp O            &kp P                      &trans
 &kp LSHIFT  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm LWIN NON_US_BACKSLASH  &trans
 &kp LCTRL   &kp Z           &kp X           &kp C         &kp V             &kp B      &mkp RCLK                    &mmv MOVE_DOWN                   &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH                   &trans
-                                            &lt 6 ESCAPE  &lt 4 SPACE       &lt 7 TAB                                                                &lt 3 ENTER  &lt 2 BACKSPACE    &lt 4 DELETE
+                                            &lt 5 ESCAPE  &lt 4 SPACE       &lt 9 TAB                                                                &lt 3 ENTER  &lt 2 BACKSPACE    &lt 4 DELETE
             >;
 
             label = "qwer";
@@ -569,23 +543,14 @@
 
         nav {
             bindings = <
-&trans  &kp NON_US_BACKSLASH  &kp Y       &kp U      &kp L   &kp J                             &msc SCRL_UP                     &mkp RCLK  &kp PAGE_UP    &kp UP_ARROW   &kp PAGE_UP    &trans   &trans
-&trans  &kp O                 &kp I       &kp E      &kp N   &kp M             &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp HOME   &kp LEFT       &kp DOWN       &kp RIGHT      &kp END  &trans
-&trans  &kp SLASH             &kp PERIOD  &kp COMMA  &kp H   &kp K   &trans                    &msc SCRL_DOWN                   &trans     &kp PAGE_DOWN  &kp PAGE_DOWN  &kp PAGE_DOWN  &trans   &trans
-                                          &trans     &trans  &trans                                                             &trans     &trans         &trans
+&trans  &kp LC(Q)  &kp LC(W)  &kp LC(F)  &kp LC(P)  &kp LC(B)                            &msc SCRL_UP                     &mkp RCLK  &kp PAGE_UP    &kp UP_ARROW   &kp PAGE_UP    &trans   &trans
+&trans  &kp LC(A)  &kp LC(R)  &kp LC(S)  &kp LC(T)  &kp LC(G)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp HOME   &kp LEFT       &kp DOWN       &kp RIGHT      &kp END  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)  &trans                    &msc SCRL_DOWN                   &trans     &kp PAGE_DOWN  &kp PAGE_DOWN  &kp PAGE_DOWN  &trans   &trans
+                              &trans     &trans     &trans                                                                &trans     &trans         &trans
             >;
 
             label = "nav";
             sensor-bindings = <&inc_dec_kp PLUS MINUS>;
-        };
-
-        r-ALL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp B   &kp P   &kp F   &kp W  &kp Q  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp G   &kp T   &kp S   &kp R  &kp A  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp V   &kp D   &kp C   &kp X  &kp Z  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
         };
 
         broswer {
@@ -597,17 +562,6 @@
             >;
 
             label = "broswer";
-        };
-
-        left-nav {
-            bindings = <
-&trans  &trans    &kp PAGE_UP    &kp UP_ARROW   &kp PAGE_UP    &trans                     &trans          &trans               &trans  &trans  &trans  &trans  &trans
-&trans  &kp HOME  &kp LEFT       &kp DOWN       &kp RIGHT      &kp END            &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &kp PAGE_DOWN  &kp PAGE_DOWN  &kp PAGE_DOWN  &trans   &trans            &trans          &trans               &trans  &trans  &trans  &trans  &trans
-                                 &trans         &trans         &trans                                     &arst_enter_to_game  &trans  &trans
-            >;
-
-            label = "arst_from_game";
         };
 
         bt {
@@ -632,15 +586,35 @@
             label = "game";
         };
 
+        game-talk {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans               &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &arst_enter_to_game  &trans  &trans
+            >;
+
+            label = "arst_from_game";
+        };
+
         l-AII-mouse {
             bindings = <
-&kp BACKSPACE   &kp SINGLE_QUOTE  &kp Y       &kp U       &kp L      &kp J                     &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
-&kp LEFT_SHIFT  &kp O             &kp I       &kp E       &kp N      &kp M             &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&kp ENTER       &kp SLASH         &kp PERIOD  &kp COMMA   &kp H      &kp K   &trans            &trans          &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                                              &kp DELETE  &kp ENTER  &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
+&trans  &kp NON_US_BACKSLASH  &kp Y       &kp U      &kp L   &kp J                     &trans          &trans     &kp K_PASTE     &kp K_COPY      &kp K_CUT     &trans           &trans
+&trans  &kp O                 &kp I       &kp E      &kp N   &kp M             &trans  &trans  &trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &kp SLASH             &kp PERIOD  &kp COMMA  &kp H   &kp K   &trans            &trans          &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                                          &trans     &trans  &trans                                    &mkp RCLK  &mkp LCLK       &mkp MCLK
             >;
 
             label = "mouse";
+        };
+
+        r-ALL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp B   &kp P   &kp F   &kp W  &kp Q  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp G   &kp T   &kp S   &kp R  &kp A  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp V   &kp D   &kp C   &kp X  &kp Z  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
