@@ -161,7 +161,7 @@
         toqwer {
             bindings = <&to 1>;
             timeout-ms = <COMBO_TIMEOUT_MS>;
-            key-positions = <5 43 15>;
+            key-positions = <5 15 44>;
             layers = <0 5 4 10 3 2>;
         };
 
@@ -497,8 +497,8 @@
 
         arst {
             bindings = <
-&kp ESCAPE  &kp Q           &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U        &kp Y            &hm RIGHT_ALT NON_US_BACKSLASH  &trans
-&kp LSHFT   &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O                 &trans
+&kp ESCAPE  &hm LEFT_GUI Q  &kp W           &kp F         &kp P             &kp B                                   &mmv MOVE_UP                     &kp J        &kp L              &kp U        &kp Y            &hm RIGHT_GUI NON_US_BACKSLASH  &trans
+&kp LSHFT   &kp A           &hm LEFT_ALT R  &hm LCTRL S   &hm LEFT_SHIFT T  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M        &hm RIGHT_SHIFT N  &hm RCTRL E  &hm RIGHT_ALT I  &kp O                           &trans
 &kp LCTRL   &kp Z           &kp X           &kp C         &kp D             &kp V      &mkp RCLK                    &mmv MOVE_DOWN                   &kp K        &kp H              &kp COMMA    &kp PERIOD       &kp SLASH                       &trans
                                             &lt 5 ESCAPE  &lt 4 SPACE       &lt 9 TAB                                                                &lt 4 ENTER  &lt 2 BACKSPACE    &lt 3 SPACE
             >;
@@ -509,10 +509,10 @@
 
         qwer {
             bindings = <
-&kp ESCAPE  &kp Q           &kp W           &kp E         &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y        &kp U              &kp I         &kp O            &kp P                      &trans
-&kp LSHIFT  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K   &hm RIGHT_ALT L  &hm LWIN NON_US_BACKSLASH  &trans
-&kp LCTRL   &kp Z           &kp X           &kp C         &kp V             &kp B      &mkp RCLK                    &mmv MOVE_DOWN                   &kp N        &kp M              &kp COMMA     &kp DOT          &kp FSLH                   &trans
-                                            &lt 5 ESCAPE  &lt 4 SPACE       &lt 9 TAB                                                                &lt 3 ENTER  &lt 2 BACKSPACE    &lt 4 DELETE
+&kp ESCAPE  &hm LEFT_GUI Q  &kp W           &kp E         &kp R             &kp T                                   &mmv MOVE_UP                     &kp Y        &kp U              &kp I        &kp O            &hm RIGHT_GUI P  &trans
+&kp LSHIFT  &kp A           &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &kp BACKSLASH    &trans
+&kp LCTRL   &kp Z           &kp X           &kp C         &kp V             &kp B      &mkp RCLK                    &mmv MOVE_DOWN                   &kp N        &kp M              &kp COMMA    &kp DOT          &kp FSLH         &trans
+                                            &lt 5 ESCAPE  &lt 4 SPACE       &lt 9 TAB                                                                &lt 4 ENTER  &lt 2 BACKSPACE    &lt 3 SPACE
             >;
 
             label = "qwer";
