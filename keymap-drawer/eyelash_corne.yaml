@@ -2,7 +2,7 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   arst:
   - $$mdi:keyboard-esc$$
-  - Q
+  - {t: Q, h: '$$mdi:apple-keyboard-command$$'}
   - W
   - F
   - P
@@ -12,10 +12,10 @@ layers:
   - L
   - U
   - Y
-  - {t: \, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: \, h: RIGHT GUI}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
-  - {t: A, s: '$$mdi:apple-keyboard-command$$'}
+  - A
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
@@ -27,7 +27,7 @@ layers:
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: O, h: RIGHT GUI}
+  - O
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -51,7 +51,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: sym}
   qwer:
   - $$mdi:keyboard-esc$$
-  - Q
+  - {t: Q, h: '$$mdi:apple-keyboard-command$$'}
   - W
   - E
   - R
@@ -61,10 +61,10 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: P, h: RIGHT GUI}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
-  - {t: A, s: '$$mdi:apple-keyboard-command$$'}
+  - A
   - {t: S, s: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, s: '$$mdi:apple-keyboard-shift$$'}
@@ -76,7 +76,7 @@ layers:
   - {t: J, s: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, s: '$$mdi:apple-keyboard-option$$'}
-  - {t: \, h: LWIN}
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -95,9 +95,9 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: broswer}
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - {t: '$$mdi:keyboard-tab$$', h: mouse}
-  - {t: '$$mdi:keyboard-return$$', h: sym}
+  - {t: '$$mdi:keyboard-return$$', h: nav}
   - {t: '$$mdi:backspace$$', h: num}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: nav}
+  - {t: '$$mdi:keyboard-space$$', h: sym}
   num:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -193,7 +193,7 @@ layers:
   - {t: \, s: '|'}
   - {t: /, s: '?', type: held alternate}
   - '|'
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   nav:
@@ -244,7 +244,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   broswer:
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+$$mdi:arrow-left-bold$$
@@ -546,7 +546,7 @@ combos:
 - p: [5, 44, 30]
   k: {t: game, h: toggle}
   l: [arst, broswer, nav, r-ALL, sym, num]
-- p: [5, 43, 15]
+- p: [5, 15, 44]
   k: {t: qwer, h: toggle}
   l: [arst, broswer, nav, r-ALL, sym, num]
 - p: [5, 44, 14]
